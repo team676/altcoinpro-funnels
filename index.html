@@ -374,179 +374,147 @@
 <div class="accent-bar sr"></div>
 
 <!-- ============================
-     S3: WHO IS THIS FOR (Checkmark Grid)
-     ============================ -->
-<section style="padding:60px 24px;">
-    <div class="container">
-        <div class="wa-box sr" style="position:relative;overflow:hidden;padding-top:50px;">
-            <div class="gold-line"></div>
-            <div class="gold-dots"></div>
-            <h2 class="grad-text" style="text-align:center;font-size:clamp(22px,4vw,30px);font-weight:600;margin-bottom:28px;">{{WHO_HEADLINE}}</h2>
-            <div class="wa-grid sr-stagger">
-                <div class="wa-item"><div class="wa-icon">&#10003;</div><p>{{WHO_ITEM_1}}</p></div>
-                <div class="wa-item"><div class="wa-icon">&#10003;</div><p>{{WHO_ITEM_2}}</p></div>
-                <div class="wa-item"><div class="wa-icon">&#10003;</div><p>{{WHO_ITEM_3}}</p></div>
-                <div class="wa-item"><div class="wa-icon">&#10003;</div><p>{{WHO_ITEM_4}}</p></div>
-                <div class="wa-item"><div class="wa-icon">&#10003;</div><p>{{WHO_ITEM_5}}</p></div>
-                <div class="wa-item"><div class="wa-icon">&#10003;</div><p>{{WHO_ITEM_6}}</p></div>
-            </div>
-            <div style="text-align:center;margin-top:20px;"><a href="#apply" class="cta" onclick="openModal(event)">{{CTA_TEXT}}</a></div>
-        </div>
-    </div>
-</section>
-
-<div class="accent-bar sr"></div>
-
-<!-- ============================
-     S4: BEFORE/AFTER
+     S4: BEFORE / AFTER
      ============================ -->
 <section class="ba-section">
     <div class="container">
-        <div class="ba-box sr" style="position:relative;overflow:hidden;padding-top:50px;">
+        <h2 class="sr grad-text" style="text-align:center;font-size:clamp(22px,4vw,30px);font-weight:600;margin-bottom:28px;">What Changes After This Event</h2>
+        <div class="ba-grid sr-stagger" style="max-width:860px;margin:0 auto;">
+            <div class="ba-card before">
+                <div class="ba-card-head">Before The Event</div>
+                <ul>
+                    <li>Your crypto sits idle while banks and exchanges pocket the yield from your holdings</li>
+                    <li>You're afraid to touch DeFi after watching FTX, Celsius, and BlockFi collapse</li>
+                    <li>You have no way to tell a safe yield opportunity from a trap</li>
+                    <li>You're overwhelmed by information and paralyzed by too many options</li>
+                    <li>Traditional finance gives you 4% while your portfolio could be earning 12-20%+</li>
+                </ul>
+            </div>
+            <div class="ba-card after">
+                <div class="ba-card-head">After The Event</div>
+                <ul>
+                    <li>You know exactly which of your coins can start earning yield tonight</li>
+                    <li>You have a 5-minute safety check to vet any opportunity with confidence</li>
+                    <li>You bypass the banks and keep the yield your portfolio generates</li>
+                    <li>You understand all 3 yield engines and how each one works in plain English</li>
+                    <li>You have a clear framework to generate consistent monthly income from your holdings</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="accent-bar sr"></div>
+
+<!-- ============================
+     S5: SECURE YOUR SEAT (General + VIP)
+     ============================ -->
+<section style="padding:60px 24px;" id="apply">
+    <div class="container">
+        <h2 class="sr grad-text" style="text-align:center;font-size:clamp(22px,4vw,30px);font-weight:600;margin-bottom:28px;">Secure Your Seat Below</h2>
+        <div class="sr" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:860px;margin:0 auto;">
+            <div style="background:linear-gradient(160deg,rgba(var(--gold-rgb),0.04) 0%,rgba(14,14,14,1) 40%,rgba(10,10,10,1) 100%);border:1px solid rgba(var(--gold-rgb),0.2);border-radius:16px;padding:36px 28px;text-align:center;">
+                <div style="font-size:11px;font-weight:700;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">GENERAL</div>
+                <div style="font-size:clamp(40px,7vw,56px);font-weight:300;margin-bottom:4px;background:linear-gradient(90deg,#666 0%,#999 15%,#fff 45%,#fff 55%,#999 85%,#666 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">FREE</div>
+                <div style="font-size:13px;color:var(--text3);margin-bottom:20px;">No credit card required</div>
+                <ul style="list-style:none;margin-bottom:24px;display:inline-flex;flex-direction:column;align-items:flex-start;text-align:left;">
+                    <li style="font-size:14px;color:var(--text2);margin-bottom:10px;display:flex;align-items:flex-start;gap:8px;line-height:1.5;">✅ One live general session at 6 PM EST</li>
+                    <li style="font-size:14px;color:var(--text2);margin-bottom:10px;display:flex;align-items:flex-start;gap:8px;line-height:1.5;">✅ Replay access to the general session</li>
+                    <li style="font-size:14px;color:var(--text2);margin-bottom:10px;display:flex;align-items:flex-start;gap:8px;line-height:1.5;">✅ Access to the live event workbook</li>
+                </ul>
+                <a href="#" class="cta" style="width:100%;justify-content:center;" onclick="openModal(event)">Save My Spot</a>
+            </div>
+            <div style="background:linear-gradient(160deg,rgba(var(--gold-rgb),0.08) 0%,rgba(14,14,14,1) 40%,rgba(10,10,10,1) 100%);border:2px solid rgba(var(--gold-rgb),0.5);border-radius:16px;padding:36px 28px;text-align:center;position:relative;box-shadow:0 0 30px rgba(var(--gold-rgb),0.1),0 0 60px rgba(var(--gold-rgb),0.04);">
+                <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--bg);font-size:11px;font-weight:700;letter-spacing:1px;padding:4px 16px;border-radius:100px;">BEST VALUE</div>
+                <div style="font-size:11px;font-weight:700;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">VIP</div>
+                <div style="font-size:clamp(40px,7vw,56px);font-weight:300;margin-bottom:4px;background:linear-gradient(90deg,#666 0%,#999 15%,#fff 45%,#fff 55%,#999 85%,#666 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">$247</div>
+                <div style="font-size:13px;color:var(--text3);margin-bottom:20px;">One-time payment</div>
+                <ul style="list-style:none;margin-bottom:24px;display:inline-flex;flex-direction:column;align-items:flex-start;text-align:left;">
+                    <li style="font-size:14px;color:var(--text2);margin-bottom:10px;display:flex;align-items:flex-start;gap:8px;line-height:1.5;">✅ Everything in General</li>
+                    <li style="font-size:14px;color:var(--text2);margin-bottom:10px;display:flex;align-items:flex-start;gap:8px;line-height:1.5;">⭐ Two private sessions with Ryan and Nick</li>
+                    <li style="font-size:14px;color:var(--text2);margin-bottom:10px;display:flex;align-items:flex-start;gap:8px;line-height:1.5;">⭐ Lifetime recordings of all sessions</li>
+                    <li style="font-size:14px;color:var(--text2);margin-bottom:10px;display:flex;align-items:flex-start;gap:8px;line-height:1.5;">⭐ 3 chances to win a one-on-one call</li>
+                </ul>
+                <a href="#" class="cta" style="width:100%;justify-content:center;" onclick="openModal(event)">Upgrade to VIP</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    @media(max-width:768px) {
+        #apply .container > div { grid-template-columns:1fr !important; max-width:450px; margin-left:auto; margin-right:auto; }
+    }
+</style>
+
+<div class="accent-bar sr"></div>
+
+<!-- ============================
+     S6: WE SPEAK FROM EXPERIENCE
+     ============================ -->
+<section style="padding:60px 24px;">
+    <div class="container">
+        <h2 class="sr grad-text" style="text-align:center;font-size:clamp(22px,4vw,30px);font-weight:600;margin-bottom:28px;">We Speak From Experience</h2>
+        <div class="wa-box sr" style="position:relative;overflow:hidden;padding-top:50px;">
             <div class="gold-line"></div>
             <div class="gold-dots"></div>
-            <h2 class="grad-text" style="text-align:center;font-size:clamp(22px,4vw,30px);font-weight:600;margin-bottom:28px;">{{BEFORE_AFTER_HEADLINE}}</h2>
-            <div class="ba-grid sr-stagger">
-                <div class="ba-card before">
-                    <div class="ba-card-head">Before {{PROGRAM_NAME}}</div>
-                    <ul>
-                        <li>{{BEFORE_1}}</li>
-                        <li>{{BEFORE_2}}</li>
-                        <li>{{BEFORE_3}}</li>
-                        <li>{{BEFORE_4}}</li>
-                        <li>{{BEFORE_5}}</li>
-                    </ul>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;max-width:820px;margin:0 auto;" class="experience-grid">
+                <div>
+                    <video autoplay muted loop playsinline style="width:100%;border-radius:12px;display:block;">
+                        <source src="/images/gif.mp4" type="video/mp4">
+                    </video>
                 </div>
-                <div class="ba-card after">
-                    <div class="ba-card-head">After {{PROGRAM_NAME}}</div>
-                    <ul>
-                        <li>{{AFTER_1}}</li>
-                        <li>{{AFTER_2}}</li>
-                        <li>{{AFTER_3}}</li>
-                        <li>{{AFTER_4}}</li>
-                        <li>{{AFTER_5}}</li>
-                    </ul>
-                </div>
-            </div>
-            <div style="text-align:center;margin-top:24px;"><a href="#apply" class="cta" onclick="openModal(event)">{{CTA_TEXT}}</a></div>
-        </div>
-    </div>
-</section>
-
-<div class="accent-bar sr"></div>
-
-<!-- ============================
-     S5: TIMELINE/OVERVIEW
-     ============================ -->
-<section class="schedule">
-    <div class="container">
-        <div class="schedule-box sr" style="position:relative;overflow:hidden;padding-top:50px;">
-            <div class="gold-line"></div>
-            <div class="gold-dots"></div>
-            <h2 class="grad-text" style="text-align:center;font-size:clamp(22px,4vw,30px);font-weight:600;margin-bottom:28px;">{{TIMELINE_HEADLINE}}</h2>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:800px;margin:0 auto;">
-                <div style="background:linear-gradient(160deg,rgba(var(--gold-rgb),0.06) 0%,rgba(18,18,18,1) 40%,rgba(15,15,15,1) 100%);border:1px solid rgba(var(--gold-rgb),0.2);border-radius:14px;overflow:hidden;transition:transform 0.3s;"><div style="height:4px;background:linear-gradient(90deg,rgba(var(--gold-rgb),0.8),rgba(var(--gold-rgb),0.15));"></div><div style="padding:24px 20px;"><div style="font-size:14px;font-weight:700;color:var(--accent);margin-bottom:10px;"><div style="width:44px;height:44px;background:rgba(var(--gold-rgb),0.12);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>{{MONTH_1_LABEL}}</div><h3 style="font-size:16px;font-weight:700;margin-bottom:8px;">{{MONTH_1_TITLE}}</h3><p style="font-size:13px;color:var(--text2);line-height:1.6;">{{MONTH_1_DESC}}</p></div></div>
-                <div style="background:linear-gradient(160deg,rgba(var(--gold-rgb),0.06) 0%,rgba(18,18,18,1) 40%,rgba(15,15,15,1) 100%);border:1px solid rgba(var(--gold-rgb),0.2);border-radius:14px;overflow:hidden;transition:transform 0.3s;"><div style="height:4px;background:linear-gradient(90deg,rgba(var(--gold-rgb),0.8),rgba(var(--gold-rgb),0.15));"></div><div style="padding:24px 20px;"><div style="font-size:14px;font-weight:700;color:var(--accent);margin-bottom:10px;"><div style="width:44px;height:44px;background:rgba(var(--gold-rgb),0.12);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>{{MONTH_2_LABEL}}</div><h3 style="font-size:16px;font-weight:700;margin-bottom:8px;">{{MONTH_2_TITLE}}</h3><p style="font-size:13px;color:var(--text2);line-height:1.6;">{{MONTH_2_DESC}}</p></div></div>
-                <div style="background:linear-gradient(160deg,rgba(var(--gold-rgb),0.06) 0%,rgba(18,18,18,1) 40%,rgba(15,15,15,1) 100%);border:1px solid rgba(var(--gold-rgb),0.2);border-radius:14px;overflow:hidden;transition:transform 0.3s;"><div style="height:4px;background:linear-gradient(90deg,rgba(var(--gold-rgb),0.8),rgba(var(--gold-rgb),0.15));"></div><div style="padding:24px 20px;"><div style="font-size:14px;font-weight:700;color:var(--accent);margin-bottom:10px;"><div style="width:44px;height:44px;background:rgba(var(--gold-rgb),0.12);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></div>{{MONTH_3_LABEL}}</div><h3 style="font-size:16px;font-weight:700;margin-bottom:8px;">{{MONTH_3_TITLE}}</h3><p style="font-size:13px;color:var(--text2);line-height:1.6;">{{MONTH_3_DESC}}</p></div></div>
-                <div style="background:linear-gradient(160deg,rgba(var(--gold-rgb),0.06) 0%,rgba(18,18,18,1) 40%,rgba(15,15,15,1) 100%);border:1px solid rgba(var(--gold-rgb),0.2);border-radius:14px;overflow:hidden;transition:transform 0.3s;"><div style="height:4px;background:linear-gradient(90deg,rgba(var(--gold-rgb),0.8),rgba(var(--gold-rgb),0.15));"></div><div style="padding:24px 20px;"><div style="font-size:14px;font-weight:700;color:var(--accent);margin-bottom:10px;"><div style="width:44px;height:44px;background:rgba(var(--gold-rgb),0.12);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>{{MONTH_4_LABEL}}</div><h3 style="font-size:16px;font-weight:700;margin-bottom:8px;">{{MONTH_4_TITLE}}</h3><p style="font-size:13px;color:var(--text2);line-height:1.6;">{{MONTH_4_DESC}}</p></div></div>
-            </div>
-            <div style="text-align:center;margin-top:24px;"><a href="#apply" class="cta" onclick="openModal(event)">{{CTA_TEXT}}</a></div>
-        </div>
-    </div>
-</section>
-
-<div class="accent-bar sr"></div>
-
-<!-- ============================
-     S6: BONUS (with corner accents + ribbon bg)
-     ============================ -->
-<section style="padding:60px 24px;">
-    <div class="container">
-        <div class="bonus-card sr" style="padding:0;overflow:hidden;max-width:600px;">
-            <div class="ribbon-bg"></div>
-            <div style="padding:32px 28px 20px;text-align:center;position:relative;">
-                <h2 style="font-size:clamp(22px,4vw,28px);font-weight:600;margin-bottom:6px;font-style:italic;color:#E8A830;">{{BONUS_HEADLINE}}</h2>
-                <p style="font-size:14px;color:#fff;">{{BONUS_SUBTEXT}}</p>
-            </div>
-            <div style="padding:0 28px;position:relative;">
-                <!-- [PHOTO] Bonus image -->
-                <img src="{{BONUS_IMAGE}}" alt="{{BONUS_ALT}}" loading="lazy" decoding="async" style="width:90%;height:auto;display:block;margin:0 auto;">
-            </div>
-            <div style="padding:20px 28px 32px;text-align:center;position:relative;">
-                <h3 style="font-size:16px;font-weight:700;margin-bottom:8px;">{{BONUS_CTA_HEADLINE}}</h3>
-                <p style="font-size:13px;color:var(--text2);line-height:1.7;max-width:440px;margin:0 auto 20px;">{{BONUS_DESCRIPTION}}</p>
-                <a href="#apply" class="cta" onclick="openModal(event)">{{CTA_TEXT}}</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="accent-bar sr"></div>
-
-<!-- ============================
-     S7: YOUR MENTOR
-     ============================ -->
-<section style="padding:60px 24px;">
-    <div class="container">
-        <h2 class="sr grad-text" style="text-align:center;font-size:clamp(22px,4vw,30px);font-weight:600;margin-bottom:20px;">{{MENTOR_SECTION_TITLE}}</h2>
-        <div class="wa-box sr" style="padding:24px 22px;">
-            <div class="team-grid">
-                <div class="team-photo sr-left">
-                    <!-- [PHOTO] Mentor headshot -->
-                    <img src="{{MENTOR_IMAGE}}" alt="{{MENTOR_NAME}}" loading="lazy" decoding="async">
-                </div>
-                <div class="team-info sr-right">
-                    <h3>{{MENTOR_NAME_DISPLAY}}</h3>
-                    <p>{{MENTOR_BIO_1}}</p>
-                    <p>{{MENTOR_BIO_2}}</p>
+                <div>
+                    <p style="font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:16px;">We called the FTX collapse early and got 1,000+ clients out of Celsius and BlockFi before they crashed.</p>
+                    <p style="font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:16px;">We called Solana and XRP before they pumped, helping regular people become millionaires.</p>
+                    <p style="font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:16px;">Ryan's consulted Dubai royalty on million-dollar crypto deals. Nick built a 365K-subscriber crypto channel. We've been featured on Fox News and Forbes.</p>
+                    <p style="font-size:15px;color:#fff;line-height:1.8;font-weight:600;">But we started like most, down 95% in 2018. The difference? We stayed, learned, and found DeFi strategies that built our portfolios regardless of market conditions.</p>
+                    <p style="font-size:15px;color:var(--accent);line-height:1.8;margin-top:16px;font-weight:600;">During The Emergency Crypto Yield Masterclass, we're going to show you how to do the same.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<div class="accent-bar sr"></div>
-
-<!-- ============================
-     S8: URGENCY BOX (optional)
-     ============================ -->
-<section style="padding:60px 24px;">
-    <div class="container">
-        <div class="sr urgency-box">
-            <div style="position:relative;width:100%;height:2px;background:linear-gradient(90deg,transparent,rgba(239,68,68,0.5),rgba(239,68,68,0.8),rgba(239,68,68,0.5),transparent);"></div>
-            <div style="width:100%;height:40px;background-image:radial-gradient(circle 1.5px, rgba(239,68,68,0.4) 100%, transparent 100%);background-size:14px 10px;background-position:center top;mask-image:linear-gradient(to bottom,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.2) 50%,rgba(0,0,0,0) 100%);-webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.2) 50%,rgba(0,0,0,0) 100%);pointer-events:none;margin-bottom:10px;"></div>
-            <p style="font-size:clamp(28px,5vw,36px);font-weight:900;margin-bottom:10px;color:#EF4444;">IMPORTANT</p>
-            <h2 style="font-size:clamp(16px,3vw,20px);font-weight:600;margin-bottom:16px;color:#EF4444;">{{URGENCY_HEADLINE}}</h2>
-            <p style="font-size:13px;color:#fff;margin-bottom:20px;">{{URGENCY_SUBTEXT}}</p>
-            <p style="font-size:clamp(44px,8vw,60px);font-weight:300;margin-bottom:24px;background:linear-gradient(90deg,#666 0%,#999 15%,#fff 45%,#fff 55%,#999 85%,#666 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">{{PRICE}}</p>
-            <div><a href="#apply" class="cta" onclick="openModal(event)">{{CTA_TEXT}}</a></div>
-        </div>
-    </div>
-</section>
+<style>
+    @media(max-width:768px) {
+        .experience-grid { grid-template-columns:1fr !important; }
+        .experience-grid video { max-width:360px; margin:0 auto; }
+    }
+</style>
 
 <div class="accent-bar sr"></div>
 
 <!-- ============================
-     S9: WHAT YOU GET ACCESS TO
+     S7: WHAT YOU'LL WALK AWAY WITH
      ============================ -->
 <section style="padding:60px 24px;">
     <div class="container">
         <div class="wa-box sr" style="position:relative;overflow:hidden;padding-top:50px;">
             <div class="gold-line"></div>
             <div class="gold-dots"></div>
-            <h2 class="grad-text" style="text-align:center;font-size:clamp(22px,4vw,30px);font-weight:600;margin-bottom:28px;">{{ACCESS_HEADLINE}}</h2>
-            <div style="border:1px solid rgba(var(--gold-rgb),0.25);border-radius:12px;background:rgba(var(--gold-rgb),0.03);padding:24px 28px;max-width:720px;margin:0 auto 20px;text-align:center;">
-            <ul class="access-list">
-                <li>{{ACCESS_ITEM_1}}</li>
-                <li>{{ACCESS_ITEM_2}}</li>
-                <li>{{ACCESS_ITEM_3}}</li>
-                <li>{{ACCESS_ITEM_4}}</li>
-                <li>{{ACCESS_ITEM_5}}</li>
-                <li>{{ACCESS_ITEM_6}}</li>
-                <li>{{ACCESS_ITEM_7}}</li>
-            </ul>
+            <h2 class="grad-text" style="font-size:clamp(26px,4.5vw,36px);text-align:center;margin-bottom:28px;">What You'll Walk Away With</h2>
+            <div class="pillar-grid sr-stagger">
+                <div class="pillar">
+                    <div class="pillar-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+                    <h3>Your Asset Activation List</h3>
+                    <div class="pname">WALK AWAY #1</div>
+                    <p>Find out exactly which coins in your portfolio, including XRP and ISO 20022-compliant assets, can start earning yield tonight. Not tomorrow. Tonight.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                    <h3>The 5-Minute Safety Audit</h3>
+                    <div class="pname">WALK AWAY #2</div>
+                    <p>The same filter Ryan uses to separate institutional-grade yield from the traps that wiped out retail in FTX, Celsius, and BlockFi. Takes 5 minutes.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="12" y2="16"/></svg></div>
+                    <h3>The 3 Non-Negotiable Rules</h3>
+                    <div class="pname">WALK AWAY #3</div>
+                    <p>The exact first steps to take after the event to stop bleeding wealth into the banks' pockets and start keeping the yield yourself.</p>
+                </div>
             </div>
-            <div style="text-align:center;"><a href="#apply" class="cta" onclick="openModal(event)">{{CTA_TEXT}}</a></div>
+            <div style="text-align:center;"><a href="#apply" class="cta" onclick="openModal(event)">Save My Spot</a></div>
         </div>
     </div>
 </section>
@@ -554,60 +522,56 @@
 <div class="accent-bar sr"></div>
 
 <!-- ============================
-     S10: YOUR INVESTMENT
-     ============================ -->
-<section style="padding:60px 24px;" id="apply">
-    <div class="container">
-        <div class="wa-box sr" style="position:relative;overflow:hidden;padding-top:50px;max-width:600px;margin:0 auto;">
-            <div class="gold-line"></div>
-            <div class="gold-dots"></div>
-            <h2 class="grad-text" style="text-align:center;font-size:clamp(28px,5vw,38px);font-weight:600;margin-bottom:28px;">Your Investment</h2>
-            <div class="invest-card" style="border:none;box-shadow:none;max-width:100%;">
-                <div class="tier">{{PROGRAM_NAME}}</div>
-                <div class="price">{{PRICE}}</div>
-                <div class="price-note">{{PAYMENT_PLANS}}</div>
-                <ul>
-                    <li>{{INVEST_ITEM_1}}</li>
-                    <li>{{INVEST_ITEM_2}}</li>
-                    <li>{{INVEST_ITEM_3}}</li>
-                    <li>{{INVEST_ITEM_4}}</li>
-                    <li>{{INVEST_ITEM_5}}</li>
-                </ul>
-                <a href="#" class="cta" style="width:100%;justify-content:center;" onclick="openModal(event)">{{CTA_TEXT}}</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="accent-bar sr"></div>
-
-<!-- ============================
-     S11: FAQ
+     S8: SECURE YOUR SEAT (Duplicate)
      ============================ -->
 <section style="padding:60px 24px;">
     <div class="container">
-        <h2 class="sr grad-text" style="text-align:center;font-size:clamp(22px,4vw,30px);font-weight:600;margin-bottom:28px;">Common Questions</h2>
-        <div class="faq-list sr-stagger">
-            <details class="fq"><summary>{{FAQ_Q1}}</summary><div class="fq-a">{{FAQ_A1}}</div></details>
-            <details class="fq"><summary>{{FAQ_Q2}}</summary><div class="fq-a">{{FAQ_A2}}</div></details>
-            <details class="fq"><summary>{{FAQ_Q3}}</summary><div class="fq-a">{{FAQ_A3}}</div></details>
-            <details class="fq"><summary>{{FAQ_Q4}}</summary><div class="fq-a">{{FAQ_A4}}</div></details>
-            <details class="fq"><summary>{{FAQ_Q5}}</summary><div class="fq-a">{{FAQ_A5}}</div></details>
-            <details class="fq"><summary>{{FAQ_Q6}}</summary><div class="fq-a">{{FAQ_A6}}</div></details>
+        <h2 class="sr grad-text" style="text-align:center;font-size:clamp(22px,4vw,30px);font-weight:600;margin-bottom:28px;">Secure Your Seat Below</h2>
+        <div class="sr" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:860px;margin:0 auto;">
+            <div style="background:linear-gradient(160deg,rgba(var(--gold-rgb),0.04) 0%,rgba(14,14,14,1) 40%,rgba(10,10,10,1) 100%);border:1px solid rgba(var(--gold-rgb),0.2);border-radius:16px;padding:36px 28px;text-align:center;">
+                <div style="font-size:11px;font-weight:700;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">GENERAL</div>
+                <div style="font-size:clamp(40px,7vw,56px);font-weight:300;margin-bottom:4px;background:linear-gradient(90deg,#666 0%,#999 15%,#fff 45%,#fff 55%,#999 85%,#666 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">FREE</div>
+                <div style="font-size:13px;color:var(--text3);margin-bottom:20px;">No credit card required</div>
+                <ul style="list-style:none;margin-bottom:24px;display:inline-flex;flex-direction:column;align-items:flex-start;text-align:left;">
+                    <li style="font-size:14px;color:var(--text2);margin-bottom:10px;display:flex;align-items:flex-start;gap:8px;line-height:1.5;">✅ One live general session at 6 PM EST</li>
+                    <li style="font-size:14px;color:var(--text2);margin-bottom:10px;display:flex;align-items:flex-start;gap:8px;line-height:1.5;">✅ Replay access to the general session</li>
+                    <li style="font-size:14px;color:var(--text2);margin-bottom:10px;display:flex;align-items:flex-start;gap:8px;line-height:1.5;">✅ Access to the live event workbook</li>
+                </ul>
+                <a href="#" class="cta" style="width:100%;justify-content:center;" onclick="openModal(event)">Save My Spot</a>
+            </div>
+            <div style="background:linear-gradient(160deg,rgba(var(--gold-rgb),0.08) 0%,rgba(14,14,14,1) 40%,rgba(10,10,10,1) 100%);border:2px solid rgba(var(--gold-rgb),0.5);border-radius:16px;padding:36px 28px;text-align:center;position:relative;box-shadow:0 0 30px rgba(var(--gold-rgb),0.1),0 0 60px rgba(var(--gold-rgb),0.04);">
+                <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--bg);font-size:11px;font-weight:700;letter-spacing:1px;padding:4px 16px;border-radius:100px;">BEST VALUE</div>
+                <div style="font-size:11px;font-weight:700;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">VIP</div>
+                <div style="font-size:clamp(40px,7vw,56px);font-weight:300;margin-bottom:4px;background:linear-gradient(90deg,#666 0%,#999 15%,#fff 45%,#fff 55%,#999 85%,#666 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">$247</div>
+                <div style="font-size:13px;color:var(--text3);margin-bottom:20px;">One-time payment</div>
+                <ul style="list-style:none;margin-bottom:24px;display:inline-flex;flex-direction:column;align-items:flex-start;text-align:left;">
+                    <li style="font-size:14px;color:var(--text2);margin-bottom:10px;display:flex;align-items:flex-start;gap:8px;line-height:1.5;">✅ Everything in General</li>
+                    <li style="font-size:14px;color:var(--text2);margin-bottom:10px;display:flex;align-items:flex-start;gap:8px;line-height:1.5;">⭐ Two private sessions with Ryan and Nick</li>
+                    <li style="font-size:14px;color:var(--text2);margin-bottom:10px;display:flex;align-items:flex-start;gap:8px;line-height:1.5;">⭐ Lifetime recordings of all sessions</li>
+                    <li style="font-size:14px;color:var(--text2);margin-bottom:10px;display:flex;align-items:flex-start;gap:8px;line-height:1.5;">⭐ 3 chances to win a one-on-one call</li>
+                </ul>
+                <a href="#" class="cta" style="width:100%;justify-content:center;" onclick="openModal(event)">Upgrade to VIP</a>
+            </div>
         </div>
     </div>
 </section>
 
+<style>
+    @media(max-width:768px) {
+        section:last-of-type .container > div[style*="grid-template-columns"] { grid-template-columns:1fr !important; max-width:450px; margin-left:auto; margin-right:auto; }
+    }
+</style>
+
 <!-- ============================
-     APPLICATION MODAL
+     REGISTRATION MODAL
      ============================ -->
 <div class="modal-overlay" id="applyModal" onclick="if(event.target===this)closeModal()">
     <div class="modal-box">
         <button class="modal-close" onclick="closeModal()">&times;</button>
-        <div class="modal-title">{{MODAL_TITLE}}</div>
-        <div class="modal-sub">{{MODAL_SUBTEXT}}</div>
-        <!-- Replace with client's Tally form embed -->
-        <iframe data-tally-src="{{TALLY_FORM_URL}}" loading="lazy" width="100%" height="307" frameborder="0" marginheight="0" marginwidth="0" title="Application" style="border-radius:8px;display:block;"></iframe>
+        <div class="modal-title">Save Your Seat</div>
+        <div class="modal-sub">The Emergency Crypto Yield Masterclass &middot; May 6, 2026 &middot; 6:00 PM EST</div>
+        <!-- Replace with Altcoin Pro's Tally form embed -->
+        <iframe data-tally-src="https://tally.so/embed/REPLACE_WITH_FORM_ID" loading="lazy" width="100%" height="307" frameborder="0" marginheight="0" marginwidth="0" title="Registration" style="border-radius:8px;display:block;"></iframe>
     </div>
 </div>
 
@@ -616,9 +580,9 @@
      ============================ -->
 <footer>
     <p><a href="/privacy-policy">Privacy Policy</a> &nbsp;|&nbsp; <a href="/terms-of-service">Terms of Service</a></p>
-    <p style="font-size:9px;color:#444;max-width:500px;margin:12px auto;line-height:1.6;">{{DISCLAIMER}}</p>
-    <p>&copy; {{YEAR}} {{COMPANY_NAME}}. All Rights Reserved.</p>
-    <p>Contact: <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></p>
+    <p style="font-size:9px;color:#444;max-width:500px;margin:12px auto;line-height:1.6;">This site is not a part of the Facebook or Meta website or Facebook Inc. or Meta Inc. Additionally, this site is not endorsed by Facebook or Meta in any way. Results mentioned are not typical. Your results may vary.</p>
+    <p>&copy; 2026 Altcoin Pro. All Rights Reserved.</p>
+    <p>Contact: <a href="mailto:owner@altcoinpro.com">owner@altcoinpro.com</a></p>
 </footer>
 
 <!-- ============================
