@@ -246,8 +246,8 @@
             <h1 style="text-align:left;font-size:clamp(24px,4vw,38px);font-weight:600;line-height:1.15;margin:0;">Turn Your Idle Crypto Into</h1>
             <h1 style="text-align:left;font-size:clamp(24px,4vw,38px);font-weight:600;line-height:1.15;margin:0;white-space:nowrap;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:6px;">Consistent Monthly Income,</h1>
             <h1 style="text-align:left;font-size:clamp(24px,4vw,38px);font-weight:600;line-height:1.15;margin:0 0 16px 0;">No Matter the Market</h1>
-            <p style="color:var(--text2);font-size:15px;line-height:1.75;margin:16px 0 28px;text-align:left;">Banks and exchanges are earning yield on your crypto every day. You're not. In The Emergency Crypto Yield Masterclass, Ryan Horst breaks down why your portfolio is bleeding money to institutions and shows you the exact process to cut them out and start keeping that yield yourself.</p>
-            <p style="text-align:left;font-size:22px;font-weight:700;color:#fff;margin-bottom:24px;">&#128197; Tuesday, May 6th &middot; 6:00 PM EST</p>
+            <p class="hero-sub-text" style="color:var(--text2);font-size:15px;line-height:1.75;margin:16px 0 28px;text-align:left;">Banks and exchanges are earning yield on your crypto every day. You're not. In The Emergency Crypto Yield Masterclass, Ryan Horst breaks down why your portfolio is bleeding money to institutions and shows you the exact process to cut them out and start keeping that yield yourself.</p>
+            <p class="hero-date" style="text-align:left;font-size:22px;font-weight:700;color:#fff;margin-bottom:24px;">&#128197; Tuesday, May 6th &middot; 6:00 PM EST</p>
             <div style="text-align:left;">
                 <a href="#apply" class="cta" style="padding:22px 0;font-size:18px;width:100%;max-width:480px;" onclick="openModal(event)">Save My Spot</a>
                 <p style="font-size:12px;color:var(--text3);margin-top:10px;">Limited spots available. First come, first served.</p>
@@ -259,21 +259,30 @@
 <style>
     @media(max-width:768px) {
         .hero .container { grid-template-columns:1fr !important; text-align:center !important; gap:24px !important; }
-        .hero h1 { text-align:center !important; font-size:23px !important; }
+        .hero h1 { text-align:center !important; font-size:26px !important; line-height:1.25 !important; white-space:normal !important; }
         .hero p, .hero div { text-align:center !important; }
+        .hero-sub-text { font-size:13px !important; }
+        .hero-date { font-size:18px !important; }
         .hero .hero-text { order:1; }
         .hero .hero-img { order:2; }
         .hero .hero-img img { max-width:260px !important; margin:0 auto; }
+        .hero-badge { font-size:9px !important; padding:8px 16px !important; letter-spacing:1.5px !important; }
         .sticky-countdown { display:none !important; }
         .sticky-bar { grid-template-columns:1fr auto !important; }
+        .sticky-bar img { height:120px !important; margin:-35px 0 -35px 0 !important; }
+        .experience-cta-mobile { display:block !important; margin-top:20px; text-align:center; }
+        .experience-cta-desktop { display:none !important; }
     }
     @media(max-width:414px) {
         .hero { padding:28px 14px !important; }
-        .hero h1 { font-size:21px !important; }
-        .hero p { font-size:12px !important; }
+        .hero h1 { font-size:23px !important; }
+        .hero-sub-text { font-size:12px !important; }
+        .hero-date { font-size:16px !important; }
         .hero .hero-img img { max-width:220px !important; }
         .hero .cta { padding:14px 32px !important; font-size:13px !important; }
+        .hero-badge { font-size:8px !important; padding:7px 12px !important; }
         .sticky-bar { padding:8px 12px !important; }
+        .sticky-bar img { height:100px !important; margin:-30px 0 -30px 0 !important; }
         .sticky-bar a { padding:8px 16px !important; font-size:10px !important; }
     }
 </style>
@@ -472,7 +481,7 @@
                     <video autoplay muted loop playsinline style="width:100%;border-radius:12px;display:block;">
                         <source src="/images/gif.mp4" type="video/mp4">
                     </video>
-                    <div style="margin-top:20px;"><a href="#apply" class="cta" onclick="openModal(event)">Save My Spot</a></div>
+                    <div class="experience-cta-desktop" style="margin-top:20px;"><a href="#apply" class="cta" onclick="openModal(event)">Save My Spot</a></div>
                 </div>
                 <div>
                     <p style="font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:16px;">We called the FTX collapse early and got 1,000+ clients out of Celsius and BlockFi before they crashed.</p>
@@ -480,6 +489,7 @@
                     <p style="font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:16px;">Ryan's consulted Dubai royalty on million-dollar crypto deals. Nick built a 365K-subscriber crypto channel. We've been featured on Fox News and Forbes.</p>
                     <p style="font-size:15px;color:#fff;line-height:1.8;font-weight:600;">But we started like most, down 95% in 2018. Instead of walking away, we went deep into DeFi yield strategies: staking, lending, and liquidity providing. We built systems that generated consistent monthly income from our portfolios regardless of whether the market was up, down, or sideways.</p>
                     <p style="font-size:15px;color:var(--accent);line-height:1.8;margin-top:16px;font-weight:600;">During The Emergency Crypto Yield Masterclass, we're going to show you how to do the same.</p>
+                    <div class="experience-cta-mobile" style="display:none;margin-top:20px;"><a href="#apply" class="cta" onclick="openModal(event)">Save My Spot</a></div>
                 </div>
             </div>
         </div>
