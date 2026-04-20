@@ -216,25 +216,67 @@
 <body>
 
 <!-- ============================
-     STICKY URGENCY BAR (optional - remove if not needed)
+     STICKY TOP BAR
      ============================ -->
-<div style="background:linear-gradient(90deg, #1a0000 0%, #3d0000 15%, #8B1414 30%, #D43737 45%, #E84A4A 50%, #D43737 55%, #8B1414 70%, #3d0000 85%, #1a0000 100%);text-align:center;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;position:sticky;top:0;z-index:9999;">
-    <span style="font-size:12px;font-weight:700;color:#fff;letter-spacing:1.5px;text-transform:uppercase;">{{URGENCY_TEXT}}:</span>
-    <span id="price-cd" style="font-size:14px;font-weight:700;color:#fff;letter-spacing:1px;font-variant-numeric:tabular-nums;">00D : 00H : 00M : 00S</span>
+<div class="sticky-bar" style="background:var(--bg);border-bottom:2px solid rgba(var(--gold-rgb),0.3);padding:10px 24px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;position:sticky;top:0;z-index:9999;box-shadow:0 2px 10px rgba(0,0,0,0.3);">
+    <div style="display:flex;align-items:center;">
+        <!-- [PHOTO] Altcoin Pro logo -->
+        <span style="font-size:18px;font-weight:700;color:var(--gold);letter-spacing:1px;">ALTCOIN PRO</span>
+    </div>
+    <div class="sticky-countdown" style="display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700;color:#fff;letter-spacing:1px;justify-self:center;">
+        <span style="width:8px;height:8px;background:#EF4444;border-radius:50%;display:inline-block;box-shadow:0 0 8px #EF4444;animation:livedot 1.5s infinite;"></span>
+        <span style="color:var(--text2);font-weight:600;font-size:12px;text-transform:uppercase;">Starts in:</span>
+        <span id="top-cd" style="font-variant-numeric:tabular-nums;">--D : --H : --M : --S</span>
+    </div>
+    <div style="display:flex;justify-content:flex-end;">
+        <a href="#apply" style="background:var(--gold);color:var(--bg);font-weight:700;font-size:13px;padding:10px 24px;border-radius:8px;text-decoration:none;text-transform:uppercase;letter-spacing:0.5px;transition:transform 0.3s,box-shadow 0.3s;" onclick="openModal(event)" onmouseover="this.style.transform='translateY(-1px)';this.style.boxShadow='0 4px 20px rgba(225,202,125,0.3)'" onmouseout="this.style.transform='';this.style.boxShadow=''">Save My Free Spot</a>
+    </div>
 </div>
+<style>@keyframes livedot{0%,100%{opacity:1;box-shadow:0 0 8px #EF4444;}50%{opacity:0.4;box-shadow:0 0 4px #EF4444;}}</style>
 
 <!-- ============================
-     S1: HERO
+     S1: HERO (Split layout)
      ============================ -->
-<section class="hero">
-    <div class="container">
-        <h1 class="grad-text">{{HEADLINE_LINE_1}}<br>{{HEADLINE_LINE_2}}<br><span class="grad-gold">{{HEADLINE_LINE_3}}</span></h1>
-        <p class="hero-sub">{{SUBHEADLINE}}</p>
-        <div style="text-align:center; margin-bottom:0;">
-            <a href="#apply" class="cta" onclick="openModal(event)">{{CTA_TEXT}}</a>
+<section class="hero" style="padding:60px 24px;">
+    <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;max-width:1100px;">
+        <div class="hero-img" style="display:flex;justify-content:center;">
+            <!-- [PHOTO] Ryan Horst or event hero image -->
+            <div style="width:100%;max-width:400px;height:400px;background:rgba(var(--gold-rgb),0.08);border:1px solid rgba(var(--gold-rgb),0.2);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:48px;color:var(--gold);">[PHOTO]</div>
+        </div>
+        <div class="hero-text">
+            <div style="text-align:left;margin-bottom:20px;"><div class="hero-badge" style="display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:100px;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(var(--gold-rgb),0.1);border:1.5px solid rgba(var(--gold-rgb),0.4);"><span class="live-dot" style="width:8px;height:8px;background:#EF4444;border-radius:50%;animation:livedot 1.5s infinite;box-shadow:0 0 8px #EF4444;"></span> FREE LIVE MASTERCLASS &middot; MAY 6, 2026</div></div>
+            <h1 style="text-align:left;font-size:clamp(24px,4vw,38px);line-height:1.15;margin-bottom:16px;">Why Most Crypto Investors Are Quietly Leaving <span style="text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:6px;">Thousands Every Month</span> In the Banks' Pockets</h1>
+            <p style="color:var(--text2);font-size:15px;line-height:1.75;margin:16px 0 28px;text-align:left;">The exact 3-step framework to bypass the banks, activate your existing portfolio, and generate $500 to $2,000+ in monthly passive income without selling a single coin, without timing the market, and without touching your core positions.</p>
+            <p style="text-align:left;font-size:17px;font-weight:600;color:#fff;margin-bottom:20px;">&#128197; Tuesday, May 6th &middot; 6:00 PM EST</p>
+            <div style="text-align:left;">
+                <a href="#apply" class="cta" onclick="openModal(event)">Save My Free Spot</a>
+                <p style="font-size:12px;color:var(--text3);margin-top:10px;">Limited spots available. First come, first served.</p>
+            </div>
         </div>
     </div>
 </section>
+
+<style>
+    @media(max-width:768px) {
+        .hero .container { grid-template-columns:1fr !important; text-align:center !important; gap:24px !important; }
+        .hero h1 { text-align:center !important; font-size:23px !important; }
+        .hero p, .hero div { text-align:center !important; }
+        .hero .hero-text { order:1; }
+        .hero .hero-img { order:2; }
+        .hero .hero-img > div { max-width:260px !important; height:300px !important; margin:0 auto; }
+        .sticky-countdown { display:none !important; }
+        .sticky-bar { grid-template-columns:1fr auto !important; }
+    }
+    @media(max-width:414px) {
+        .hero { padding:28px 14px !important; }
+        .hero h1 { font-size:21px !important; }
+        .hero p { font-size:12px !important; }
+        .hero .hero-img > div { max-width:220px !important; height:260px !important; }
+        .hero .cta { padding:14px 32px !important; font-size:13px !important; }
+        .sticky-bar { padding:8px 12px !important; }
+        .sticky-bar a { padding:8px 16px !important; font-size:10px !important; }
+    }
+</style>
 
 <div class="accent-bar sr" style="margin:14px auto 14px;"></div>
 
@@ -246,31 +288,31 @@
         <div class="wa-box sr" style="position:relative;overflow:hidden;padding-top:50px;">
             <div class="gold-line"></div>
             <div class="gold-dots"></div>
-            <h2 class="grad-text" style="font-size:clamp(26px,4.5vw,36px);text-align:center;margin-bottom:20px;">{{PILLARS_HEADLINE}}</h2>
+            <h2 class="grad-text" style="font-size:clamp(26px,4.5vw,36px);text-align:center;margin-bottom:20px;">What You Will Learn Inside the Event</h2>
             <div style="text-align:center;max-width:620px;margin:0 auto 32px;background:rgba(var(--accent-rgb),0.04);border:1px solid rgba(var(--gold-rgb),0.15);border-radius:10px;padding:14px 20px;">
-                <p style="font-size:15px;color:var(--text2);line-height:1.7;margin:0;">{{PILLARS_SUBTEXT}}</p>
+                <p style="font-size:15px;color:var(--text2);line-height:1.7;margin:0;">By the end of this masterclass, you'll understand exactly how your existing crypto holdings can generate $500 to $2,000+ in monthly passive income (a 12-20% annual yield on a $100K portfolio) without selling a single coin, without timing the market, and without touching your core Moonshot positions.</p>
             </div>
             <div class="pillar-grid sr-stagger">
                 <div class="pillar">
+                    <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+                    <h3>The Asset Activation List</h3>
+                    <div class="pname">DELIVERABLE 1</div>
+                    <p>Which of your coins, including XRP and ISO 20022-compliant assets, can start earning yield tonight.</p>
+                </div>
+                <div class="pillar">
                     <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-                    <h3>{{PILLAR_1_TITLE}}</h3>
-                    <div class="pname">{{PILLAR_1_SUBTITLE}}</div>
-                    <p>{{PILLAR_1_DESC}}</p>
+                    <h3>The 5-Minute Safety Audit</h3>
+                    <div class="pname">DELIVERABLE 2</div>
+                    <p>The filter that separates institutional-grade yield from the YieldGate traps that wiped out retail in FTX, Celsius, and BlockFi.</p>
                 </div>
                 <div class="pillar">
-                    <div class="pillar-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-                    <h3>{{PILLAR_2_TITLE}}</h3>
-                    <div class="pname">{{PILLAR_2_SUBTITLE}}</div>
-                    <p>{{PILLAR_2_DESC}}</p>
-                </div>
-                <div class="pillar">
-                    <div class="pillar-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
-                    <h3>{{PILLAR_3_TITLE}}</h3>
-                    <div class="pname">{{PILLAR_3_SUBTITLE}}</div>
-                    <p>{{PILLAR_3_DESC}}</p>
+                    <div class="pillar-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                    <h3>The 3 Non-Negotiable Rules</h3>
+                    <div class="pname">DELIVERABLE 3</div>
+                    <p>The exact first steps to take tonight to stop bleeding wealth into the banks' pockets.</p>
                 </div>
             </div>
-            <div style="text-align:center;"><a href="#apply" class="cta" onclick="openModal(event)">{{CTA_TEXT}}</a></div>
+            <div style="text-align:center;"><a href="#apply" class="cta" onclick="openModal(event)">Save My Free Spot</a></div>
         </div>
     </div>
 </section>
