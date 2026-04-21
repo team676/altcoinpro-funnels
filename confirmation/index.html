@@ -28,8 +28,9 @@
         @keyframes fadeup { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
         .wa-box { background:linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(6,6,6,1) 100%); border:1.5px solid rgba(239,68,68,0.45); border-radius:16px; padding:28px 24px; max-width:620px; margin:0 auto; }
         .step-card { background:rgba(239,68,68,0.04); border:1px solid rgba(239,68,68,0.2); border-radius:12px; padding:24px; display:flex; align-items:flex-start; gap:18px; opacity:0; animation:fadeup 0.7s ease-out forwards; }
-        .step-card:nth-child(1) { animation-delay:0.3s; }
-        .step-card:nth-child(2) { animation-delay:0.5s; }
+        .step-card:nth-child(1) { animation-delay:0.2s; }
+        .step-card:nth-child(2) { animation-delay:0.4s; }
+        .step-card:nth-child(3) { animation-delay:0.6s; }
         .step-icon { min-width:48px; width:48px; height:48px; background:rgba(239,68,68,0.12); border:1px solid rgba(239,68,68,0.4); border-radius:12px; display:flex; align-items:center; justify-content:center; }
         .step-link { display:inline-block; margin-top:14px; padding:10px 20px; background:var(--gold); color:var(--bg); font-size:13px; font-weight:700; border-radius:8px; text-decoration:none; text-transform:uppercase; letter-spacing:0.5px; }
         .check-wrap { animation:checkpop 0.8s cubic-bezier(0.16,1,0.3,1); }
@@ -42,7 +43,7 @@
 
 <!-- SUCCESS BAR -->
 <div style="background:linear-gradient(90deg,#1a0000 0%,#3d0000 15%,#8B1414 30%,#D43737 45%,#E84A4A 50%,#D43737 55%,#8B1414 70%,#3d0000 85%,#1a0000 100%);text-align:center;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:12px;position:sticky;top:0;z-index:9999;">
-    <span style="font-size:12px;font-weight:700;color:#fff;letter-spacing:1.5px;text-transform:uppercase;">✓ You're In — 2 More Quick Steps</span>
+    <span style="font-size:12px;font-weight:700;color:#fff;letter-spacing:1.5px;text-transform:uppercase;">✓ You're In. 3 Quick Steps Below.</span>
 </div>
 
 <!-- PROGRESS -->
@@ -65,7 +66,7 @@
             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
         </div>
         <h1 style="font-size:clamp(28px,5vw,42px);font-weight:700;line-height:1.15;margin-bottom:16px;max-width:700px;margin-left:auto;margin-right:auto;">You're Registered For The Masterclass</h1>
-        <p style="font-size:16px;color:var(--text2);max-width:580px;margin:0 auto 36px;line-height:1.7;">Two quick things to do now so you don't miss a thing on May 10.</p>
+        <p style="font-size:16px;color:var(--text2);max-width:580px;margin:0 auto 36px;line-height:1.7;">Three quick things to do now so you don't miss a thing on May 10.</p>
     </div>
 </section>
 
@@ -75,13 +76,13 @@
         <div style="max-width:620px;margin:0 auto;display:flex;flex-direction:column;gap:16px;">
             <div class="step-card">
                 <div class="step-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 15.5a9 9 0 1 1-4.9-8"/><path d="M22 6l-10 10-4-4"/></svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.943 3.71 1.444 5.71 1.447h.006c6.585 0 11.946-5.336 11.949-11.896 0-3.18-1.264-6.18-3.543-8.447"/></svg>
                 </div>
                 <div style="flex:1;">
                     <div style="font-size:11px;font-weight:700;color:var(--red);letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;">Step 1</div>
-                    <h3 style="font-size:18px;font-weight:700;margin-bottom:6px;">Join The Private Telegram Group</h3>
-                    <p style="font-size:14px;color:var(--text2);line-height:1.6;">This is where we drop pre-event resources, reply to questions, and remind you 30 minutes before the masterclass starts. Don't skip this.</p>
-                    <a href="https://t.me/+REPLACE_TELEGRAM_LINK" target="_blank" class="step-link">Join The Telegram Group</a>
+                    <h3 style="font-size:18px;font-weight:700;margin-bottom:6px;">Join The Private WhatsApp Group</h3>
+                    <p style="font-size:14px;color:var(--text2);line-height:1.6;">This is where we drop pre-event resources, answer questions, and remind you 30 minutes before the masterclass starts. Don't skip this.</p>
+                    <a href="https://chat.whatsapp.com/REPLACE_WHATSAPP_LINK" target="_blank" class="step-link">Join The WhatsApp Group</a>
                 </div>
             </div>
             <div class="step-card">
@@ -91,7 +92,17 @@
                 <div style="flex:1;">
                     <div style="font-size:11px;font-weight:700;color:var(--red);letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;">Step 2</div>
                     <h3 style="font-size:18px;font-weight:700;margin-bottom:6px;">Check Your Email</h3>
-                    <p style="font-size:14px;color:var(--text2);line-height:1.6;">We just sent your Zoom link and masterclass workbook. If you don't see it in 5 minutes, check spam and whitelist <strong style="color:#fff;">team@altcoinpro.com</strong>.</p>
+                    <p style="font-size:14px;color:var(--text2);line-height:1.6;">We just sent your Zoom link and masterclass workbook to the email you registered with. Open it, save it somewhere you'll find it on May 10.</p>
+                </div>
+            </div>
+            <div class="step-card">
+                <div class="step-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                </div>
+                <div style="flex:1;">
+                    <div style="font-size:11px;font-weight:700;color:var(--red);letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;">Step 3</div>
+                    <h3 style="font-size:18px;font-weight:700;margin-bottom:6px;">Check Your Spam Folder</h3>
+                    <p style="font-size:14px;color:var(--text2);line-height:1.6;">If the email isn't in your inbox, check spam or promotions. Whitelist <strong style="color:#fff;">team@altcoinpro.com</strong> so the Zoom link doesn't get lost on event day.</p>
                 </div>
             </div>
         </div>
