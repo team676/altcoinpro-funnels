@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Strategy Call | Altcoin Pro Accelerator</title>
+    <meta name="description" content="Book a strategy call with the Altcoin Pro team. Map out the fastest path from idle crypto to consistent monthly income.">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"></noscript>
+    <style>
+        :root { --accent:#D4AF37; --accent-rgb:212,175,55; --bg:#0a0a0a; --bg2:#111; --text:#fff; --text2:#aaa; --text3:#777; --text4:#555; --border:#222; --red:#EF4444; --gold:#D4AF37; --gold-rgb:212,175,55; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        html { scroll-behavior:smooth; }
+        html, body { -ms-overflow-style:none; scrollbar-width:none; }
+        html::-webkit-scrollbar, body::-webkit-scrollbar { display:none; }
+        body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+        .container { max-width:1000px; margin:0 auto; padding:0 24px; }
+        img { max-width:100%; height:auto; }
+        .cta { display:inline-flex; align-items:center; justify-content:center; background:linear-gradient(180deg, #E8C84A 0%, #D4AF37 50%, #C49B2F 100%); color:#000; font-weight:700; font-size:16px; padding:18px 36px; border-radius:14px; text-decoration:none; border:2px solid #8B6914; cursor:pointer; font-family:inherit; box-shadow:0 4px 30px rgba(0,0,0,0.3); transition:transform 0.4s ease; position:relative; overflow:hidden; }
+        .cta:hover { transform:translateY(-2px); }
+        .cta::after { content:''; position:absolute; top:0;left:0;right:0;bottom:0; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.25),transparent); animation:shimmer 3s infinite; border-radius:14px; pointer-events:none; }
+        @keyframes shimmer { 0%{transform:translateX(-100%)} 100%{transform:translateX(100%)} }
+        .wa-box { background:linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(6,6,6,1) 100%); border:1.5px solid rgba(239,68,68,0.45); border-radius:16px; padding:40px 32px; max-width:860px; margin:0 auto; }
+        .sr { opacity:0; transform:translateY(24px); transition:opacity 0.7s, transform 0.7s; }
+        .sr.v { opacity:1; transform:translateY(0); }
+        .grad-text { background:linear-gradient(90deg,#666 0%,#999 15%,#fff 45%,#fff 55%,#999 85%,#666 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
+        .ba-card { border-radius:14px; overflow:hidden; background:linear-gradient(160deg, rgba(30,30,30,1) 0%, rgba(18,18,18,1) 100%); }
+        .ba-card.before { border-top:2px solid rgba(239,68,68,0.4); }
+        .ba-card.after { border-top:2px solid rgba(var(--gold-rgb),0.5); }
+        .ba-card-head { padding:16px 20px; font-size:15px; font-weight:700; border-bottom:1px solid rgba(255,255,255,0.06); }
+        .ba-card.before .ba-card-head { color:var(--red); }
+        .ba-card.after .ba-card-head { color:var(--gold); }
+        .ba-card ul { list-style:none; padding:20px; margin:0; }
+        .ba-card li { font-size:14px; color:var(--text2); margin-bottom:12px; line-height:1.6; display:flex; align-items:flex-start; gap:10px; }
+        .ba-card.before li::before { content:'✗'; color:var(--red); font-weight:700; min-width:14px; }
+        .ba-card.after li::before { content:'✓'; color:var(--gold); font-weight:700; min-width:14px; }
+        .feature-card { background:rgba(239,68,68,0.04); border:1px solid rgba(239,68,68,0.2); border-radius:12px; padding:22px; }
+        .fq { border-bottom:1px solid var(--border); }
+        .fq summary { padding:16px 0; cursor:pointer; font-size:14px; font-weight:700; list-style:none; display:flex; justify-content:space-between; align-items:center; }
+        .fq summary:hover { color:var(--red); }
+        .fq summary::-webkit-details-marker { display:none; }
+        .fq summary::after { content:'+'; font-size:18px; font-weight:700; color:var(--red); transition:transform 0.3s; }
+        .fq[open] summary::after { transform:rotate(45deg); }
+        .fq-a { padding:0 0 16px; font-size:13px; color:var(--text2); line-height:1.7; }
+        footer { text-align:center; padding:40px 24px 30px; border-top:1px solid var(--border); margin-top:60px; }
+        footer a { color:var(--accent); text-decoration:none; }
+        footer p { font-size:12px; color:var(--text4); margin-bottom:8px; }
+        .modal-overlay { display:none; position:fixed; top:0;left:0;right:0;bottom:0; background:rgba(0,0,0,0.85); z-index:10000; align-items:center; justify-content:center; backdrop-filter:blur(4px); }
+        .modal-overlay.open { display:flex; }
+        .modal-box { background:var(--bg2); border:1px solid rgba(239,68,68,0.5); border-radius:16px; padding:28px 24px; max-width:420px; width:92%; position:relative; max-height:90vh; overflow-y:auto; }
+        .modal-close { position:absolute; top:12px;right:16px; background:none; border:none; color:var(--text3); font-size:28px; cursor:pointer; line-height:1; }
+    </style>
+</head>
+<body>
+
+<!-- STICKY NAV -->
+<div style="background:var(--bg);border-bottom:2px solid #990000;padding:12px 24px;display:flex;justify-content:center;align-items:center;position:sticky;top:0;z-index:9999;">
+    <img src="/images/masterclass-logo.png" alt="The Emergency Crypto Yield Masterclass" style="height:60px;width:auto;">
+</div>
+
+<!-- HERO -->
+<section style="padding:60px 24px 40px;text-align:center;">
+    <div class="container">
+        <div style="display:inline-flex;align-items:center;gap:8px;padding:10px 24px;border-radius:100px;background:rgba(239,68,68,0.1);border:1.5px solid rgba(239,68,68,0.5);margin-bottom:24px;">
+            <span style="font-size:12px;font-weight:700;color:#EF4444;letter-spacing:2px;text-transform:uppercase;">Private Strategy Call</span>
+        </div>
+        <h1 style="font-size:clamp(28px,5vw,44px);font-weight:700;line-height:1.15;margin-bottom:16px;max-width:820px;margin-left:auto;margin-right:auto;">Book A Call To Map Out Your <span style="text-decoration:underline;text-decoration-color:#EF4444;text-underline-offset:6px;">Monthly Yield Plan</span></h1>
+        <p style="font-size:16px;color:var(--text2);max-width:680px;margin:0 auto 32px;line-height:1.7;">You've seen the framework. Now let's apply it to your actual portfolio. On this 15-minute call, our team maps out the fastest path from idle crypto to consistent monthly income, and you decide if the Altcoin Pro Accelerator is right for you.</p>
+        <a href="#" class="cta" onclick="openModal(event)">Book My Strategy Call</a>
+        <p style="font-size:12px;color:var(--text3);margin-top:12px;">Limited slots. First come, first served.</p>
+    </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section style="padding:40px 24px 60px;">
+    <div class="container">
+        <div class="wa-box sr">
+            <h2 class="grad-text" style="text-align:center;font-size:clamp(22px,4vw,30px);font-weight:700;margin-bottom:28px;">What Your Portfolio Looks Like After The Accelerator</h2>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:760px;margin:0 auto;" class="ba-grid">
+                <div class="ba-card before">
+                    <div class="ba-card-head">Before</div>
+                    <ul>
+                        <li>Crypto sitting idle in wallets and exchanges</li>
+                        <li>Banks and institutions keeping the yield</li>
+                        <li>Anxiety every time the market dips</li>
+                        <li>No clear plan beyond "hold and hope"</li>
+                        <li>Watching others earn passive income</li>
+                    </ul>
+                </div>
+                <div class="ba-card after">
+                    <div class="ba-card-head">After</div>
+                    <ul>
+                        <li>Every qualifying coin generating monthly yield</li>
+                        <li>You keep the yield instead of the banks</li>
+                        <li>Portfolio earns whether market is up or down</li>
+                        <li>A written plan you can execute with confidence</li>
+                        <li>A personal coach and research team behind you</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:28px;"><a href="#" class="cta" onclick="openModal(event)">Book My Strategy Call</a></div>
+        </div>
+        <style>@media(max-width:768px) { .ba-grid { grid-template-columns:1fr !important; } }</style>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section style="padding:40px 24px 60px;">
+    <div class="container">
+        <div class="wa-box sr">
+            <h2 class="grad-text" style="text-align:center;font-size:clamp(22px,4vw,30px);font-weight:700;margin-bottom:8px;">What You Get Inside The Accelerator</h2>
+            <p style="text-align:center;font-size:14px;color:var(--text2);margin-bottom:28px;">5 months of 1-on-1 mentorship, 150+ lessons, and the full Altcoin Pro yield system.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:820px;margin:0 auto 28px;" class="features-grid">
+                <div class="feature-card"><div style="font-size:24px;margin-bottom:10px;">🎯</div><h3 style="font-size:15px;font-weight:700;margin-bottom:6px;">1-on-1 Onboarding Call</h3><p style="font-size:13px;color:var(--text2);line-height:1.6;">A dedicated call to map your portfolio, goals, and risk profile. You leave with a personal gameplan built around your exact holdings.</p></div>
+                <div class="feature-card"><div style="font-size:24px;margin-bottom:10px;">👥</div><h3 style="font-size:15px;font-weight:700;margin-bottom:6px;">Bi-Weekly 1-on-1 Coaching</h3><p style="font-size:13px;color:var(--text2);line-height:1.6;">5 months of private calls with your coach. Review every position, every decision, every question.</p></div>
+                <div class="feature-card"><div style="font-size:24px;margin-bottom:10px;">📚</div><h3 style="font-size:15px;font-weight:700;margin-bottom:6px;">150+ Lesson Curriculum</h3><p style="font-size:13px;color:var(--text2);line-height:1.6;">Every DeFi strategy broken down step-by-step. The 28+ yield plays Ryan uses in his own portfolio.</p></div>
+                <div class="feature-card"><div style="font-size:24px;margin-bottom:10px;">💬</div><h3 style="font-size:15px;font-weight:700;margin-bottom:6px;">Private Coach Group Chat</h3><p style="font-size:13px;color:var(--text2);line-height:1.6;">Direct access to your coach and the research team via Slack. Ask questions as they come up.</p></div>
+                <div class="feature-card"><div style="font-size:24px;margin-bottom:10px;">📅</div><h3 style="font-size:15px;font-weight:700;margin-bottom:6px;">Weekly Group Coaching Calls</h3><p style="font-size:13px;color:var(--text2);line-height:1.6;">Live DeFi Q&A every week. See real positions, real yields, and real decisions made live.</p></div>
+                <div class="feature-card"><div style="font-size:24px;margin-bottom:10px;">🔒</div><h3 style="font-size:15px;font-weight:700;margin-bottom:6px;">The 11 Laws Of Safe Yield</h3><p style="font-size:13px;color:var(--text2);line-height:1.6;">The full safety framework (you saw 3 in the masterclass). Avoid every FTX, Celsius, and BlockFi trap.</p></div>
+                <div class="feature-card"><div style="font-size:24px;margin-bottom:10px;">🪙</div><h3 style="font-size:15px;font-weight:700;margin-bottom:6px;">Unlimited APU Credits</h3><p style="font-size:13px;color:var(--text2);line-height:1.6;">Full access to Altcoin Pro University: every course, every call, every strategy.</p></div>
+                <div class="feature-card"><div style="font-size:24px;margin-bottom:10px;">✅</div><h3 style="font-size:15px;font-weight:700;margin-bottom:6px;">Weekly Accountability Check-ins</h3><p style="font-size:13px;color:var(--text2);line-height:1.6;">Structured progress reviews so you never go 2 weeks without deploying a position.</p></div>
+            </div>
+            <div style="text-align:center;"><a href="#" class="cta" onclick="openModal(event)">Book My Strategy Call</a></div>
+        </div>
+        <style>@media(max-width:768px) { .features-grid { grid-template-columns:1fr !important; max-width:480px; } }</style>
+    </div>
+</section>
+
+<!-- CLIENT RESULTS -->
+<section style="padding:40px 24px 60px;">
+    <div class="container">
+        <div class="wa-box sr">
+            <h2 class="grad-text" style="text-align:center;font-size:clamp(22px,4vw,30px);font-weight:700;margin-bottom:28px;">Client Results</h2>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;max-width:900px;margin:0 auto;" class="results-grid">
+                <div class="feature-card" style="text-align:center;"><div style="font-size:32px;font-weight:800;color:var(--gold);margin-bottom:8px;">$55K</div><h4 style="font-size:14px;font-weight:700;margin-bottom:6px;">Recovered In 30 Days</h4><p style="font-size:12px;color:var(--text2);line-height:1.6;">Herschel thought his crypto was gone. The Accelerator showed him which positions to activate and which to exit.</p></div>
+                <div class="feature-card" style="text-align:center;"><div style="font-size:32px;font-weight:800;color:var(--gold);margin-bottom:8px;">$14K</div><h4 style="font-size:14px;font-weight:700;margin-bottom:6px;">Per Month Passive</h4><p style="font-size:12px;color:var(--text2);line-height:1.6;">Linda went from idle holder to earning $14K/month in yield without selling a single coin.</p></div>
+                <div class="feature-card" style="text-align:center;"><div style="font-size:32px;font-weight:800;color:var(--gold);margin-bottom:8px;">3X</div><h4 style="font-size:14px;font-weight:700;margin-bottom:6px;">Portfolio Growth</h4><p style="font-size:12px;color:var(--text2);line-height:1.6;">Dino's portfolio tripled after he stopped making emotional decisions and followed the Altcoin Pro system.</p></div>
+            </div>
+        </div>
+        <style>@media(max-width:768px) { .results-grid { grid-template-columns:1fr !important; max-width:400px; } }</style>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding:40px 24px 60px;">
+    <div class="container" style="max-width:700px;">
+        <h2 class="grad-text" style="text-align:center;font-size:clamp(22px,4vw,30px);font-weight:700;margin-bottom:28px;">Common Questions</h2>
+        <details class="fq"><summary>Who is the Accelerator for?</summary><div class="fq-a">Crypto investors with $50K+ in holdings who want to stop letting their coins sit idle and start generating monthly income.</div></details>
+        <details class="fq"><summary>What does it cost?</summary><div class="fq-a">We share the full investment on the call once we've confirmed you're a fit. There's a fully refundable deposit to apply, refunded if you're not accepted.</div></details>
+        <details class="fq"><summary>How long is the program?</summary><div class="fq-a">5 months of 1-on-1 mentorship with bi-weekly private calls, weekly group coaching, and unlimited access to the coaching team via Slack.</div></details>
+        <details class="fq"><summary>What if I've never used DeFi before?</summary><div class="fq-a">Most Accelerator clients start with zero DeFi experience. The onboarding call walks you through setting up your wallet, your security, and your first position.</div></details>
+        <details class="fq"><summary>Is there a guarantee?</summary><div class="fq-a">Yes. Show up to every call, do the work, follow the process. If you don't have a working yield plan deployed by the end of month 1, we refund you.</div></details>
+        <details class="fq"><summary>What's the call about? Is it a pitch?</summary><div class="fq-a">The call is a real strategy session. We audit your current portfolio, identify which assets qualify for yield, flag security risks, and map out what a yield plan would look like for you specifically.</div></details>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section style="padding:40px 24px 80px;text-align:center;">
+    <div class="container">
+        <h2 class="grad-text" style="font-size:clamp(24px,4.5vw,36px);font-weight:700;margin-bottom:16px;">Ready To Stop Leaving Yield On The Table?</h2>
+        <p style="font-size:15px;color:var(--text2);max-width:560px;margin:0 auto 28px;line-height:1.7;">Book a 15-minute strategy call. You'll walk away with a clear picture of what's possible with your portfolio.</p>
+        <a href="#" class="cta" onclick="openModal(event)">Book My Strategy Call</a>
+    </div>
+</section>
+
+<!-- APPLICATION MODAL -->
+<div class="modal-overlay" id="applyModal" onclick="if(event.target===this)closeModal()">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:4px;text-align:center;">Book Your Strategy Call</h3>
+        <p style="font-size:13px;color:var(--text3);text-align:center;margin-bottom:16px;">Takes 60 seconds. You'll pick a time on the next screen.</p>
+        <iframe data-tally-src="https://tally.so/embed/REPLACE_BOOKCALL_FORM_ID?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&formEventsForwarding=1" loading="lazy" width="100%" height="400" frameborder="0" title="Application" style="border-radius:8px;display:block;"></iframe>
+    </div>
+</div>
+
+<footer>
+    <p><a href="/privacy-policy">Privacy Policy</a> &nbsp;|&nbsp; <a href="/terms-of-service">Terms of Service</a></p>
+    <p style="font-size:9px;color:#444;max-width:500px;margin:12px auto;line-height:1.6;">Results mentioned are not typical. Your results may vary. Cryptocurrency investments carry risk.</p>
+    <p>&copy; 2026 Altcoin Pro. All Rights Reserved.</p>
+    <p>Contact: <a href="mailto:owner@altcoinpro.com">owner@altcoinpro.com</a></p>
+</footer>
+
+<script>
+try { var els=document.querySelectorAll('.sr'); if(els.length&&'IntersectionObserver' in window){ var o=new IntersectionObserver(function(ee){ee.forEach(function(e){if(e.isIntersecting){e.target.classList.add('v');o.unobserve(e.target)}})},{threshold:0.08}); els.forEach(function(el){o.observe(el)}); }else{els.forEach(function(el){el.classList.add('v')})} } catch(x){document.querySelectorAll('.sr').forEach(function(el){el.classList.add('v')})}
+</script>
+
+<script>
+function openModal(e){if(e)e.preventDefault();document.getElementById('applyModal').classList.add('open');document.body.style.overflow='hidden';}
+function closeModal(){document.getElementById('applyModal').classList.remove('open');document.body.style.overflow='';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
+</script>
+
+<script>
+window.addEventListener('message', function(e) {
+    if (e.data && typeof e.data === 'string' && e.data.indexOf('Tally.FormSubmitted') === 0) {
+        window.location.href = '/calendar/' + window.location.search;
+    }
+});
+</script>
+
+<script>
+var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){e.src=e.dataset.tallySrc})};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w;s.onload=v;s.onerror=v;d.body.appendChild(s);}
+</script>
+
+</body>
+</html>
